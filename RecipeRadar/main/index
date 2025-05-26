@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe Raddar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="https://wallpapercave.com/wp/wp5591051.jpg" class="bg-img" alt="background image">
+    <fieldset id="fd1">
+        <h1>RECIPE RADDER</h1>
+        <div id="div1">
+            <button id="btn1" class="recipe-button" onclick="window.location.href='index1.html'">
+                
+                <img id="img1" src="https://png.pngtree.com/png-vector/20240310/ourmid/pngtree-free-vector-little-chef-illustration-png-image_11939248.png" alt="Chef Kid">
+            Share Recipes
+            </button>
+            <br>
+            <button id="btn2" class="recipe-button" onclick="window.location.href='view.html'">
+                
+                <img id="img2" src="https://www.freeiconspng.com/uploads/free-recipe-sheet-clip-art-21.png" alt="Recipe Sheet">
+            View Recipes
+            </button>
+        </div>
+    </fieldset>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

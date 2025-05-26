@@ -1,0 +1,76 @@
+#fd1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(249, 247, 247, 0.6);
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 100vh;
+}
+
+.recipe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 20px;
+    background-color: rgb(255, 240, 254);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.recipe-button:hover {
+    font-size: 24px;
+    height: 5rem;
+    width: 35vh;
+    background-color: rgba(249, 247, 247, 0.6);
+}
+
+#img1,
+#img2 {
+    height: 80px;
+    width: auto;
+}
+
+#share-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#recipeForm input,
+#recipeForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.recipe {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}

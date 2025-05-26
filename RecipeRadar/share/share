@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe Raddar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffafce7;
+            position: relative;
+            color: #131802;
+        }
+        
+        #imgs {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        #share-form {
+            max-width: 500px;
+            margin: 5vh auto;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: rgba(245, 236, 205, 0.8);
+            box-shadow: 0 4px 20px rgba(236, 188, 112, 0.3);
+            backdrop-filter: blur(4px);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #3d2a02;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline-color: #8d5907;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #583c04;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #680808;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="https://th.bing.com/th/id/OIP.eOlghnIJXbXlvm14gDP2iwHaEJ?cb=iwc2&w=2000&h=1121&rs=1&pid=ImgDetMain" id="imgs" alt="background image">
+    <div id="share-form">
+        <h2>Share Your Recipe</h2>
+        <form id="recipeForm">
+            <label for="name">Recipe Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="ingredients">Ingredients:</label><br>
+            <textarea id="ingredients" name="ingredients" rows="4" required></textarea><br><br>
+
+            <label for="process">Process:</label><br>
+            <textarea id="process" name="process" rows="5" required></textarea><br><br>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+        <option value="" disabled selected>Select category</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Dinner">Dinner</option>
+    </select>
+            <br><br>
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

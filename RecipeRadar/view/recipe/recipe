@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4f054b;
+            margin: 0;
+            padding: 30px;
+            color: #420943;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        #imgs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        
+        #recipe-detail {
+            background-color: #edc2ed;
+            border-radius: 16px;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(155, 112, 159, 0.3);
+        }
+        
+        h2 {
+            color: #8b3e77;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #bc5090;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: #6c1a5f;
+        }
+        
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #969696;
+            margin-top: 10px;
+            background-color: #c29bbd;
+            outline-color: #bc5090;
+        }
+        
+        #avg {
+            font-weight: bold;
+            color: #bc5090;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://i.pinimg.com/originals/77/cb/be/77cbbe29eeaf7a15b2c53195d0c2ed30.jpg" id="imgs" alt="background image">
+    <div id="recipe-detail"></div>
+    <script src="recipe.js"></script>
+</body>
+
+</html>
